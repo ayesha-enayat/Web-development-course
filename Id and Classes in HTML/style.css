@@ -1,0 +1,13 @@
+/*we can acces id using # */
+#mydiv{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.red{
+    color: red;
+}
+
+.bg-color{
+    background-color: rgb(249, 249, 156);
+}
