@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+     <!--Internal css-->
+     <style>
+        /* Element  selector */
+
+        div {
+            /* color: yellow;
+            background-color: red; */
+        }
+
+        /* class selector */
+        .red{
+            color: yellow;
+            background-color: red;
+        }
+
+        /* Id Selector */
+        #green{
+            background-color: rgb(2, 178, 2);
+        }
+
+        /*Child Selector*/
+        div > p{
+            /* color:blue;
+            background-color: beige; */
+        }
+
+        /*Descendant Selector*/
+        div p{
+            color:rebeccapurple;
+            background-color: chartreuse;
+        }
+        /*Universal selector*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: darkred;
+        }
+        a:link{
+            color:green;
+        }
+        a:active{
+            background-color: yellow;
+        }
+        a:hover{
+            background-color: aqua;
+        }
+
+        p:first-child{
+            background-color: crimson;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <p>i am one</p>
+        <p>i am two</p>
+    </main>
+   
+
+    <div class="red">
+        I am div 1
+        <p>I am para inside div</p>
+        <p>I am para 2</p>
+        <span><p>I am para 3</p></span> <!--Child selector doesnot work on this para
+         because this child slector only apply if the element this direct child 
+         of any parent element-->
+    </div>
+
+    <div id="green">
+        I am div 2
+    </div>
+
+    <a href="https://www.codewithharry.com/tutorial/CSS-selectors/">Code with harry</a>
+    <a href="https://www.w3schools.com/">w3schools</a>
+
+        
+   
+
+
+
+
+
+
+</body>
+
+</html>
