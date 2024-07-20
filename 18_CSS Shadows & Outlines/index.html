@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS - shadows and Outlines</title>
+    <style>
+        .box{
+            border: 2px solid blue;
+            /* box-shadow: h-offset v-offset blur spread color inset; */
+            box-shadow: 5px 5px 15px 5px #888888;
+            
+        }
+        p{
+            /* text-shadow: h-offset v-offset blur color; */
+            border: 2px solid red;
+            text-shadow: 2px 5px 4px #9319ea;
+            /* outline: width style color; */
+            outline: 2px solid green;
+            outline-offset: 10px;
+            border-radius: 15px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="box">
+        i am a box
+    </div>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolores ea iure id fugiat error blanditiis culpa voluptates, quas consequatur aut accusamus eum quam libero iusto enim consequuntur eos quo doloremque minus repellendus. Sit aliquid aspernatur quod iusto, ad obcaecati reiciendis sunt ducimus.
+    </p>
 </body>
 </html>
