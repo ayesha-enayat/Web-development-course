@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --maincolor: #007542;
+            --seccolor: #03d47a;
+            --textcolor: #90f906;
+
+        }
+
+        h1 {
+            color: var(--textcolor, blue);
+            background-color: var(--maincolor);
+            border: 2px solid var(--seccolor);
+
+        }
+
+        p {
+            --textcolor: #002d70;
+            /*local var with override global*/
+            color: var(--textcolor);
+            background-color: var(--seccolor);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Variables</h1>
+    <p>
+
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat animi nulla commodi qui provident, reiciendis
+        ut alias quaerat itaque velit veritatis magni autem!</p>
+</body>
+
+</html>
