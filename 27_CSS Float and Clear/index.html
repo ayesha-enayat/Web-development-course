@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Float and Clear</title>
+    <style>
+        .box{
+            border:2px solid black;
+        }
+        .clearfix{
+            overflow: auto;
+        }
+        .box img {
+            float: right; 
+            /* float: left; */
+            /* float: none;*/
+           
+
+        } 
+
+        /* div {
+            width:155px;
+            height: 155px; */
+  /* float: right; */
+ 
+    /* } */
+    .div {
+        width:155px;
+        height:155px;
+    }
+
+.div1 {
+  background: red;
+  float: right;
+}
+
+.div2 {
+  background: yellow;
+  clear:left;
+}
+
+.div3 {
+  background: green;
+}
+        
+    </style>
 </head>
+
 <body>
+    <div class="box clearfix">
+        <img  height="255px"src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reprehenderit alias incidunt cumque excepturi ullam sapiente? Dolor quibusdam labore, nostrum dignissimos consequatur porro praesentium nam eaque a. Eligendi deserunt voluptatem aut dolore saepe perferendis ipsa deleniti nostrum, consectetur iure, recusandae itaque fuga, ut quasi cupiditate unde totam. Odio soluta dolor numquam magnam enim illo ipsa a!</p>
+    </div>
     
+        <!-- <div class="div div1">1</div>
+        <div class="div div2">2</div>
+        <div class="div div3">3</div> -->
+    
+
+
 </body>
+
 </html>
