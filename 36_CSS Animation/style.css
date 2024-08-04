@@ -1,0 +1,52 @@
+.container{
+    background-color: blue;
+    height: 80vh;
+    width: 40vw;
+}
+.box{
+    background-color: rgb(241, 134, 4);
+    /* border: 3px solid aqua; */
+    width:50px;
+    height: 50px;
+    /* animation-name: ayeshaAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-delay: 2s; */
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate-reverse; */
+    /* animation-play-state: running;
+    animation-play-state: paused; */
+
+
+    /* animation: ayeshaAnimation 1s ease-out 1s 1 forwards ; */
+    animation: ayeshaAnimation 2s ease-in-out 3s 1,
+               animation2 3s ease-in-out 3s 1;
+}
+
+@keyframes ayeshaAnimation {
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: yellow;
+        transform: translate(1000px);
+    }
+}
+@keyframes animation2 {
+    0%{
+transform: rotate(100deg);
+    }
+    20%{    
+        transform: rotate(200deg);
+    }
+    40%{
+        transform: rotate(220deg);
+    }
+    80%{
+        transform: rotate(250deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
