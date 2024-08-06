@@ -1,0 +1,18 @@
+.container{
+    width:340px;
+    height:400px;
+    border: 2px solid black;
+    background-image: url("download.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* img{
+    width:340px;
+    height:400px;
+    object-fit: cover;
+    object-fit: fill;
+    /* object-position: top right; */
+    /* object-fit: contain; */
+    /* object-position: 10px 20px; */
+/* }  */
