@@ -8,3 +8,5 @@ if(b){
 else{
     console.log("stay connected");
 }
+document.title("hello world");
+document.body.style.backgroundColor("red");
