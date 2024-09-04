@@ -1,45 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Moderustic:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
 
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-
+    font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     background-color: black;
 }
+
 .main {
-    height: 100vh;
-    background-image: url(Assets/Images/Background\ image.jpg);
+    background-image: url("assets/images/Background\ image.jpg");
     background-position: center center;
-    background-repeat: none;
     background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
     position: relative;
 }
 
 .main .box {
-    height: 100vh;
+    height: 644px;
     width: 100%;
-    opacity: 0.44;
-    background-color: black;
+    opacity: 0.69;
     position: absolute;
     top: 0;
+    background-color: black;
 }
 
 nav {
-    height: 62px;
     max-width: 60vw;
+    justify-content: space-between;
     margin: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    height: 100px;
 }
 
 nav img {
-    width: 114px;
+    color: red;
+    width: 130px;
     position: relative;
     z-index: 10;
 }
@@ -50,29 +51,33 @@ nav button {
 }
 
 .hero {
-    /* font-family: "Martel Sans", sans-serif; */
-    font-family:"poppins";
-    height: 100%;
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     color: white;
     position: relative;
-    z-index: 10;
-    padding:18px;
-    text-align: center;
-
+    gap: 23px;
+    padding: 0 30px;
 }
 
-.hero> :nth-child(1),
-.hero> :nth-child(2) {
-    font-weight: 800;
+.hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
     font-size: 48px;
+    text-align: center;
 }
 
-.hero> :nth-child(3),
-.hero> :nth-child(4) {
-    font-weight: 400px;
+.hero> :nth-child(2) {
+    font-weight: 400;
     font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
 }
